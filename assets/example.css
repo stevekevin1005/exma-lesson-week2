@@ -1,0 +1,12 @@
+li{
+	background-color: yellow
+}
+
+#title{
+	background-color: yellow
+}
+@media only screen and (max-width: 1000px) {
+	li{
+		background-color: black
+	}
+}

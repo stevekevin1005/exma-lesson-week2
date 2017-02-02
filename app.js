@@ -1,8 +1,10 @@
 var express = require('express');  
 var app = express(); 
 
-app.set('view engine', 'jade');
-// app.set('view engine', 'ejs');  
+// app.set('view engine', 'jade');
+app.set('view engine', 'ejs');  
+
+app.use(express.static('assets'));
 
 app.get('/', function(req, res) {  
   res.send('<h1>jade & express 範例</h1>');  

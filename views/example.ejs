@@ -3,11 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title><%= title %></title>
+	<link rel="stylesheet" href="/example.css">
+	<style type="text/css">
+		h1{
+			background-color: red
+		}
+	</style>
 </head>
 <body>
-	<h1><%= title %></h1>
+	<h1 id="title"><%= title %></h1>
 	<section>
-		<h2>User info</h2>
+		<h2 style='background-color: green'>User info</h2>
 		Name: <%= person.name %>
 		<br/>
 		Sex: <%= person.sex%>
@@ -21,7 +27,7 @@
 		</ul>
 	</section>
 	<section>
-		<h2>Compile html code</h2>
+		<h2>Compile tml code</h2>
 		<%= html %>
 		<%- html %>
 	</section>
