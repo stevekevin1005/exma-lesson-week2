@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title=title
+  body
+    h1=title
+    section
+      h2 User info
+      | Name: 
+      =person.name
+      br
+      | Sex:
+      =person.sex
+      br
+      | Like fruits
+      br
+      ul
+        for fruit in fruits
+          li=fruit
+    section
+      h2 Compile html code
+      =html
+      !=html
