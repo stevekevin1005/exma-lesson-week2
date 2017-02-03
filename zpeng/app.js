@@ -14,7 +14,6 @@ app.get('/', function(req, res) {
   res.render('index.jade', {
     name: 'zpeng',
     title: 'Jade',
-    engine: ['html','jade','ejs'],
     person: {
       shan: '87',
       johnny: '86'
@@ -27,7 +26,6 @@ app.get('/ejs', function(req, res) {
   res.render('index.ejs', {
     name: 'zpeng',
     title: 'Ejs',
-    engine: ['html','jade','ejs'],
     person: {
       shan: '87',
       johnny: '86'

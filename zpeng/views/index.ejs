@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css" />
     <title>html</title>
   </head>
   <body>
     <h1><%= title %></h1>
-    <h2><%= name %></h2>
-    <h2>friends? johnny pai = <%= person.johnny %> && shan= <%= person.shan %> </h2>
+    <h2 class="name"><%= name %></h2>
+    <h2 class="friends">Edge person have friends? one number <%= person.johnny %> => johnny and the other is number <%= person.shan %>  => shan</h2>
     <%- html %>
   </body>
 </html>
