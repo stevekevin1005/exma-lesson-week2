@@ -2,7 +2,6 @@ var express = require('express');
 var app = express(); 
 
 app.set('view engine', 'ejs');  
-
 app.use(express.static('assets'));
 
 app.get('/', function(req, res) {  
@@ -21,7 +20,13 @@ app.get('/view/', function(req, res) {
   });   
 });  
 
-app.use('/', index);
+app.get('/view/html', function(req, res) {
+  const options = {
+    root: './views/'
+  }
+  res.sendFile('example.html', options);
+});
+
 app.listen(3000, function() {  
   console.log('Listening on port 3000');  
 });   
