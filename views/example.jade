@@ -6,24 +6,23 @@ html(lang='en')
     link(rel='stylesheet', href='/example.css')
     style(type='text/css').
       h1{
-        background-color: red
+        background-color: pink
       }
   body
-    h1=title
+    h1=week2 Homework: Express2
+    
     section
-      h2(style='background-color: green') User info
+      h3 Here is code block test.
+      =html
+      !=html
+    section
+      h2(style='padding: 10px; margin: 10px') Self Intro
       | Name: 
       =person.name
       br
-      | Sex:
-      =person.sex
       br
-      | Like fruits
+      | I like cats.
       br
       ul
-        for fruit in fruits
-          li=fruit
-    section
-      h2 Compile html code
-      =html
-      !=html
+        for cats in cats
+          li=cats
