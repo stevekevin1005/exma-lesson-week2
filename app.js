@@ -10,18 +10,19 @@ app.get('/', function(req, res) {
   res.send('<h1>jade & express 範例</h1>');  
 });  
 
-app.get('/view/', function(req, res) {  
+app.get('/views/', function(req, res) {  
   res.render('example', {  
-    title: 'Template example',  
-    fruits: ['Apple', 'Banana', 'Orange'],
+    title: 'Self Introduction',  
+    contact: ['FB: Hsiao Jung', 'Email: jhaha219@yahoo.com.tw', 'Cellphone: 0933867785'],
     person: {
-      name: 'steve',
-      sex: 'male'
+      name: '陳筱蓉',
+      sex: 'Female',
+      school: 'NTOU',
+      club: 'PopMusicClub',
     },
-    html: "<h2>This is html code</h2>"
   });   
 });  
 
 app.listen(3000, function() {  
   console.log('Listening on port 3000');  
-});   
+});  
