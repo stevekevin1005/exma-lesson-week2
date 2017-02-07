@@ -1,12 +1,37 @@
+h1{
+	background-color: pink;
+	padding: 5px;
+  	margin: 10px;
+}
+h2{
+	padding: 5px;
+ 	margin: 5px;
+}
+h3{
+	font-family:Monaco
+}
 li{
-	background-color: yellow
+	background-color: lightblue;
+	font-family:Monaco;
+	padding: 5px;
+  	margin: 10px;
+}
+.pre-code {
+  background-color: #eee;
+  border: 1px solid #999;
+  font-family: Courier New;
+  display: block;
+  padding: 5px;
+  margin: 10px;
+}
+.block{
+	font-family:Monaco;	
+	padding: 5px;
+ 	margin: 30px;
 }
 
-#title{
-	background-color: yellow
-}
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
 	li{
-		background-color: black
+		background-color: lightseagreen
 	}
 }
