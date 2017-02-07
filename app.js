@@ -1,6 +1,7 @@
 var express = require('express');  
 var app = express(); 
-
+const path = require('path');
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');  
 app.use(express.static('assets'));
 
@@ -25,7 +26,7 @@ app.get('/view/html', function(req, res) {
     root: './views/'
   }
   res.sendFile('example.html', options);
-});
+})
 
 app.listen(3000, function() {  
   console.log('Listening on port 3000');  
