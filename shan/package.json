@@ -1,0 +1,17 @@
+{
+  "name": "shan",
+  "version": "1.0.0",
+  "description": "jade & ejs example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
+  },
+  "author": "steve",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "jade": "^1.11.0"
+  }
+}

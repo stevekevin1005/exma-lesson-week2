@@ -1,0 +1,25 @@
+li{
+	text-align: center;
+	background-color: blue;
+	color: white
+}
+p{
+	text-align: center;
+	color:rgb(99,66,77);
+}
+#title{
+	text-align: center;
+	color: green;
+}
+h2{
+	text-align: center;
+	color:forestgreen;
+}
+@media only screen and (max-width: 720px) {
+	#title{
+		color:skyblue;
+	}
+	li{
+		background-color: black;
+	}
+}
