@@ -4,32 +4,33 @@
 	<meta charset="UTF-8">
 	<title><%= title %></title>
 	<link rel="stylesheet" href="/example.css">
-	<style type="text/css">
-		h1{
-			background-color: red
-		}
-	</style>
 </head>
 <body>
 	<h1 id="title"><%= title %></h1>
-	<section>
-		<h2 style='background-color: green'>User info</h2>
-		Name: <%= person.name %>
-		<br/>
-		Sex: <%= person.sex%>
-		<br/>
-		Like fruits
-		<br/>
-		<ul>
-			<% for(var i=0; i<fruits.length; i++) {%>
-		  	<li><%= fruits[i] %></li>
-			<% } %>
-		</ul>
-	</section>
-	<section>
-		<h2>Compile tml code</h2>
-		<%= html %>
-		<%- html %>
+	<hr>
+	<h2>INFO</h2>
+	<br><br>
+	<section>	
+		<div class="center">
+			
+			Name: <%= person.name %>
+			<br/>
+			Sex: <%= person.sex %>
+			<br/>
+			School: <%= person.school %>
+ 			<br/>
+ 			Club: <%= person.club %>
+ 			<br/>
+			Contact:
+			<br/>
+			<h3>
+			<ul>
+				<% for(var i=0; i<contact.length; i++) {%>
+			  	<li><%= contact[i] %></li>
+				<% } %>
+			</ul>
+			</h3>
+		</div>
 	</section>
 </body>
 </html>
