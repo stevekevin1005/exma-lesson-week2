@@ -1,12 +1,12 @@
 {
-  "name": "exma-lesson-week2",
+  "name": "ChenYO",
   "version": "1.0.0",
-  "description": "jade & ejs example",
+  "description": "ejs example and others practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "author": "steve",
+  "author": "Jason",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.5.5",
