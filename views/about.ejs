@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="ejs.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Pangolin'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Sansita'>
+	
+</head>
+<body>
+    
+    <h1><%= title %></h1>
+    <h2>My info</h2>
+    
+	<div>
+		
+        <h3>Name<br></h3>
+        <%= person.name %><br>
+        
+        <h3>Sex</h3><br>
+        <%= person.sex %><br>
+        
+        <h3>School:</h3><br>
+        <%= school %><br>
+        
+        <h3>Hobby</h3><br>
+        <% for(var i=0; i<hobby.length; i++) { %>
+		  	<%= hobby[i] %>
+			<% } %>
+        <br>
+        
+        <h3>Dream</h3><br>
+        <%= dream %><br>
+        
+        <h3>I want to learn</h3><br>
+        <%= wantlearn %>
+        
+    </div>
+        
+	
+</body>
+</html>

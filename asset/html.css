@@ -1,0 +1,37 @@
+body {
+  background-color: #DE7047;
+  padding: 50px;
+ 
+}
+
+h1{
+    text-align: center;
+    font-size:35px;
+    color: #F3FFE2;
+    font-family: 'Pangolin', cursive;
+}
+
+h2{
+    text-align: center;
+    font-size:25px;
+    color: #ACF0F2;
+    font-family: 'Sansita', sans-serif;
+}
+
+h3{
+    text-align: center;
+    text-decoration:underline;
+    font-size:20px;
+    color: #228765;
+    font-family: 'Sansita', sans-serif;
+}
+        
+div{
+    margin:0px auto;
+    width: 500px;
+    text-align: center;
+    font-size:20px;
+    background-color: #E1E6FA;
+    font-family: 'Sansita', sans-serif,Microsoft JhengHei;
+    
+}      
