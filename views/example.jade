@@ -5,25 +5,25 @@ html(lang='en')
     title=title
     link(rel='stylesheet', href='/example.css')
     style(type='text/css').
-      h1{
-        background-color: red
+      h2{
+        background-color: purple
       }
   body
     h1=title
     section
-      h2(style='background-color: green') User info
+      h3(style='background-color: green') User info
       | Name: 
-      =person.name
-      br
-      | Sex:
-      =person.sex
-      br
-      | Like fruits
-      br
+      =me.name
+      hr
+      | Hobby:
+      =me.hobby
+      hr
+      | Like heros:
       ul
-        for fruit in fruits
-          li=fruit
+        for fruit in heros
+          li.hero=fruit
+      hr
     section
-      h2 Compile html code
+      h3 Compile html code
       =html
       !=html
