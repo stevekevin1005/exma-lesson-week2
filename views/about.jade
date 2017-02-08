@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title=title
+    link(rel='stylesheet', href='/jade.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Pangolin')
+    link(rel='stylesheet', href=' https://fonts.googleapis.com/css?family=Sansita')
+   
+    style(type='text/css').
+      
+  body
+    h1=title
+    section
+      h2 My info
+      .div
+        h3 Name 
+        =person.name
+        br
+        h3 Sex
+        =person.sex
+        br
+        h3 School 
+        =school
+        br
+        h3 Hobby
+        =hobby
+        br
+        h3 Dream
+        =dream
+        br
+        h3 I want to learn
+        =wantlearn
+    
+
+      
