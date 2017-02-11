@@ -3,7 +3,7 @@ li{
 }
 
 #title{
-	background-color: yellow
+	background-color: skyblue
 }
 @media only screen and (max-width: 1000px) {
 	li{

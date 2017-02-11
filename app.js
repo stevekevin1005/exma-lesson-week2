@@ -1,27 +1,46 @@
-var express = require('express');  
-var app = express(); 
+const express = require("express");
+const app = express();
+const http = require("http");
+const path = require("path");
+const port = 3000;
 
-// app.set('view engine', 'jade');
-app.set('view engine', 'ejs');  
+app.set('view engine', 'jade');
+app.set('views', path.join(__dirname, 'views'));
 
-app.use(express.static('assets'));
+app.use(express.static("assets"));
 
-app.get('/', function(req, res) {  
-  res.send('<h1>jade & express 範例</h1>');  
-});  
-
-app.get('/view/', function(req, res) {  
-  res.render('example', {  
-    title: 'Template example',  
-    fruits: ['Apple', 'Banana', 'Orange'],
+app.get('/', function(req, res) {
+  res.render('johnny.ejs', {
+    title: 'Ejs',
+    fruits: ['Mango', 'Banana'],
     person: {
-      name: 'steve',
-      sex: 'male'
+      name: 'Johnny',
+      hobby: 'Play Computer Games'
     },
     html: "<h2>This is html code</h2>"
-  });   
-});  
+  });
+});
 
-app.listen(3000, function() {  
-  console.log('Listening on port 3000');  
-});   
+app.get('/jade', function(req, res) {
+  res.render('johnny.jade', {
+    title: 'Jdae',
+    fruits: ['Mango', 'Banana'],
+    person: {
+      name: 'Johnny',
+      hobby: 'Play Computer Games'
+    },
+    html: "<h2>This is html code</h2>"
+  });
+});
+
+app.get('/html', function(req, res) {
+  const options = {
+    root: './views'
+  }
+  res.sendFile('johnny.html', options);
+});
+
+http.createServer(app)
+.listen(port, () => {
+  console.log("app is listening on " + port);
+});
